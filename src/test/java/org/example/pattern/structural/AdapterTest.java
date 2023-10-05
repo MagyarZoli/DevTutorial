@@ -12,7 +12,8 @@ public class AdapterTest
     private User2 user3;
 
     @Test
-    public void test_Adapter_Pattern() {
+    @Override
+    public void test() {
         assertDoesNotThrow(() -> user3 = user2);
         Adapter adapter = new Adapter(user3);
         adapter.getPayment(1000.0f);

@@ -12,7 +12,8 @@ public class CompositeTest
     Composite composite2;
 
     @Test
-    public void test_Composite_Pattern() {
+    @Override
+    public void test() {
         assertDoesNotThrow(() -> composite = user);
         assertDoesNotThrow(() -> composite2 = user2);
         assertNotNull(composite);

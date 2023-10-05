@@ -13,7 +13,8 @@ public class DecoratorTest
     private Payment user3;
 
     @Test
-    public void test_Decorator_Pattern() {
+    @Override
+    public void test() {
         user.getPayment(payment);
         assertDoesNotThrow(() -> user3 = new Decorator(user));
         user3.getPayment(payment);

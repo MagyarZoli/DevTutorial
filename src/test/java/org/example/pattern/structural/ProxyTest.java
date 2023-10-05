@@ -11,7 +11,8 @@ public class ProxyTest
         extends UserTest {
 
     @Test
-    public void test_Proxy_Pattern() {
+    @Override
+    public void test() {
         assertDoesNotThrow(() -> rawUser = new Proxy(User.builder()
                 .name("Proxy Name")
                 .age((byte) 20)

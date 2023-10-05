@@ -11,7 +11,8 @@ public class FactoryMethodTest
     private FactoryMethod factoryMethod = new FactoryMethod();
 
     @Test
-    public void test_FactoryMethod_Pattern() {
+    @Override
+    public void test() {
         assertDoesNotThrow(() -> {
             factoryMethod.getPersonPackage(7, "user");
             factoryMethod.getPersonPackage(14, "User2");

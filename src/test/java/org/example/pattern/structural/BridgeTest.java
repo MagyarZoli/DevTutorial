@@ -10,7 +10,8 @@ public class BridgeTest
         extends UserTest {
 
     @Test
-    public void test_Bridge_Pattern() {
+    @Override
+    public void test() {
         assertDoesNotThrow(() -> rawUser = new User(new Bridge("Bridge Name"), user));
         assertNotNull(rawUser);
         System.out.println(rawUser);

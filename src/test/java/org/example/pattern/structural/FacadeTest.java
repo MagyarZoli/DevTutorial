@@ -13,7 +13,8 @@ public class FacadeTest
     private Facade facade;
 
     @Test
-    public void test_Facade_Pattern() {
+    @Override
+    public void test() {
         facade = new Facade();
         facade.facade(List.of(user, user, user2, user), 1_200.0F);
     }

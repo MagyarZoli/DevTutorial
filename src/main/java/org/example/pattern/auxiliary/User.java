@@ -1,6 +1,7 @@
 package org.example.pattern.auxiliary;
 
 import lombok.*;
+import org.example.pattern.behavioral.Command;
 import org.example.pattern.structural.Bridge;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User
-        implements Comparable<User>, Person, Payment {
+        implements Comparable<User>, Person, Payment, Document{
 
     private Long id;
     private String name;
@@ -69,5 +70,9 @@ public class User
     @Override
     public void getPayment(float pay) {
         System.out.println(pay / 1.27);
+    }
+
+    public void command(Command command) {
+        command.execute();
     }
 }

@@ -12,7 +12,8 @@ public class SingletonTest
     private User user2;
 
     @Test
-    public void test_Singleton_Patterns() {
+    @Override
+    public void test() {
         assertDoesNotThrow(() -> user = Singleton.getInstance(user));
         assertNotNull(user);
         assertDoesNotThrow(() -> user2 = Singleton.getInstance(user));

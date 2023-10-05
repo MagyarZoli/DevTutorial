@@ -12,7 +12,8 @@ public class PrototypeTest
     private User userClone;
 
     @Test
-    public void test_Prototype_Pattern() {
+    @Override
+    public void test() {
         assertDoesNotThrow(() -> userClone = new Prototype(user).clone());
         assertNotNull(userClone);
         System.out.println(user);

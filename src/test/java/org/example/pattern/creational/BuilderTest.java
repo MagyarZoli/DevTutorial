@@ -10,14 +10,15 @@ public class BuilderTest
         extends UserTest {
 
     @Test
-    public void test() {
+    public void defaultTest() {
         assertDoesNotThrow(() -> rawUser = new User(id, name, age, address, work, gender));
         assertNotNull(rawUser);
         System.out.println(rawUser);
     }
 
     @Test
-    public void test_Builder_Pattern() {
+    @Override
+    public void test() {
         assertDoesNotThrow(() -> rawUser = new Builder()
                 .setId(id)
                 .setName(name)
