@@ -1,6 +1,7 @@
 package org.example.pattern.auxiliary;
 
 import lombok.*;
+import org.example.pattern.structural.Bridge;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User
-        implements Comparable<User>, Person{
+        implements Comparable<User>, Person, Payment {
 
     private Long id;
     private String name;
@@ -18,6 +19,15 @@ public class User
     private Address address;
     private Work work;
     private Gender gender;
+
+    public User(Bridge bridge, User user) {
+        id = user.getId();
+        name = bridge.getName();
+        age = user.getAge();
+        address = user.getAddress();
+        work = user.getWork();
+        gender = user.getGender();
+    }
 
     @Override
     public int compareTo(User o) {
@@ -54,5 +64,10 @@ public class User
             System.out.println(list.get(i).getClass().getName());
         }
         return list;
+    }
+
+    @Override
+    public void getPayment(float pay) {
+        System.out.println(pay / 1.27);
     }
 }

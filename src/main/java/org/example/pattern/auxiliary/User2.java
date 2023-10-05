@@ -10,7 +10,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User2
-        implements Comparable<User2>, Person{
+        implements Comparable<User2>, Person, Payment{
 
     private Long id;
     private String firstName;
@@ -57,5 +57,10 @@ public class User2
             System.out.println(list.get(i).getClass().getName());
         }
         return list;
+    }
+
+    @Override
+    public void getPayment(float pay) {
+        System.out.println(pay);
     }
 }
