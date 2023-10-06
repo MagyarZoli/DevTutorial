@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class InterpreterTest
-        extends UserTest {
+        extends UserTest
+        implements BehavioralTest {
 
     Interpreter interpreter3;
     Interpreter interpreter2;

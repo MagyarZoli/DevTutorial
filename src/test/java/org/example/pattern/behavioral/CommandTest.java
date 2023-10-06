@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class CommandTest
-        extends UserTest {
+        extends UserTest
+        implements BehavioralTest {
 
     Document doc;
     Document doc2;

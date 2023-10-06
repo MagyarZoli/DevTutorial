@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MediatorTest
-        extends UserTest {
+        extends UserTest
+        implements BehavioralTest {
 
     Mediator mediator;
 

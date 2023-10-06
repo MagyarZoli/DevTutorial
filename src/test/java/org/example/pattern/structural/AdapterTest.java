@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class AdapterTest
-        extends UserTest {
+        extends UserTest
+        implements StructuralTest {
 
     private User2 user3;
 

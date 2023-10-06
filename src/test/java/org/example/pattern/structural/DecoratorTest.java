@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DecoratorTest
-        extends UserTest {
+        extends UserTest
+        implements StructuralTest {
 
     private float payment = 1_000.0F;
     private Payment user3;

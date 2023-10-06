@@ -5,16 +5,17 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ChainOfResponsibilityTest
+public class VisitorTest
         extends UserTest
         implements BehavioralTest {
+
+    Visitor.Sub3Visitor sub3;
 
     @Test
     @Override
     public void test() {
-        ChainOfResponsibility chain = new ChainOfResponsibility.SubResponsibility(
-                new ChainOfResponsibility.Sub2Responsibility(null));
-        chain.open("sub2");
-        chain.open("sub");
+        assertDoesNotThrow(() -> sub3 = new Visitor.Sub3Visitor());
+        sub3.accept(new Visitor.VisitorImp());
+        System.out.println(sub3.message());
     }
 }

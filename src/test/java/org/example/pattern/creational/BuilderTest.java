@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BuilderTest
-        extends UserTest {
+        extends UserTest
+        implements CreationalTest {
 
     @Test
     public void defaultTest() {

@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FactoryMethodTest
-        extends UserTest {
+        extends UserTest
+        implements CreationalTest {
 
     private FactoryMethod factoryMethod = new FactoryMethod();
 

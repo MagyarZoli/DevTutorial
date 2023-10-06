@@ -8,7 +8,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class IteratorTest
-        extends UserTest {
+        extends UserTest
+        implements BehavioralTest {
 
     Iterator iterator;
     Iterator.SubIterator subIterator;

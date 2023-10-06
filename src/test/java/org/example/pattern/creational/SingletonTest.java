@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SingletonTest
-        extends UserTest {
+        extends UserTest
+        implements CreationalTest {
 
     private User user2;
 

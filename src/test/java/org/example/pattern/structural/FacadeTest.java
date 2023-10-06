@@ -8,7 +8,8 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FacadeTest
-        extends UserTest {
+        extends UserTest
+        implements StructuralTest {
 
     private Facade facade;
 
