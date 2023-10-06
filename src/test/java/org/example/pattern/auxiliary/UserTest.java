@@ -1,5 +1,8 @@
 package org.example.pattern.auxiliary;
 
+import org.example.auxiliary.Address;
+import org.example.auxiliary.Gender;
+import org.example.auxiliary.Work;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

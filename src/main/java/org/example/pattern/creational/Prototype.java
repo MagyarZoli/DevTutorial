@@ -1,10 +1,10 @@
 package org.example.pattern.creational;
 
 import lombok.*;
-import org.example.pattern.auxiliary.Address;
-import org.example.pattern.auxiliary.Gender;
+import org.example.auxiliary.Address;
+import org.example.auxiliary.Gender;
 import org.example.pattern.auxiliary.User;
-import org.example.pattern.auxiliary.Work;
+import org.example.auxiliary.Work;
 
 @Data
 @EqualsAndHashCode(callSuper = true)

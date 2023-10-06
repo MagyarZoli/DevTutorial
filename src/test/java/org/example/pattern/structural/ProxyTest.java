@@ -1,6 +1,6 @@
 package org.example.pattern.structural;
 
-import org.example.pattern.auxiliary.Gender;
+import org.example.auxiliary.Gender;
 import org.example.pattern.auxiliary.User;
 import org.example.pattern.auxiliary.UserTest;
 import org.junit.jupiter.api.Test;

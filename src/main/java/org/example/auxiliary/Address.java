@@ -1,4 +1,4 @@
-package org.example.pattern.auxiliary;
+package org.example.auxiliary;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

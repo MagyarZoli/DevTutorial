@@ -1,6 +1,9 @@
 package org.example.pattern.auxiliary;
 
 import lombok.*;
+import org.example.auxiliary.Address;
+import org.example.auxiliary.Gender;
+import org.example.auxiliary.Work;
 import org.example.pattern.behavioral.Command;
 
 import java.util.ArrayList;
