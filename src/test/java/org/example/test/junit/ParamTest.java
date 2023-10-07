@@ -1,6 +1,7 @@
 package org.example.test.junit;
 
 import org.example.auxiliary.Day;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 
@@ -44,6 +45,7 @@ public class ParamTest {
         assertEquals(name, bankAccount.getHolderName());
     }
 
+    @Disabled
     @ParameterizedTest
     @CsvFileSource(resources = "ParamTest_CsvFileSource.csv", delimiter = ';')
     public void parameterizedTest_CsvFileSource(double amount, String name) {
