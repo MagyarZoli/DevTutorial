@@ -1,0 +1,11 @@
+Authorization Bearer Token = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTIyYWQ1ZjhkNzViZDAwMTNmNGIxZTAiLCJpYXQiOjE2OTY3NzE5NTd9.AIkqbZANEoAinaMwDzsrA63hfoYohfuXMHIvMxCMzfI`
+```bash
+curl --location 'https://thinking-tester-contact-list.herokuapp.com/contacts' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTIyYWQ1ZjhkNzViZDAwMTNmNGIxZTAiLCJpYXQiOjE2OTY3NzE5NTd9.AIkqbZANEoAinaMwDzsrA63hfoYohfuXMHIvMxCMzfI' \
+--header 'Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTIyYWQ1ZjhkNzViZDAwMTNmNGIxZTAiLCJpYXQiOjE2OTY3NzE5NTd9.AIkqbZANEoAinaMwDzsrA63hfoYohfuXMHIvMxCMzfI'
+```
+```bash
+curl --location 'https://thinking-tester-contact-list.herokuapp.com/contacts/6522add924541900134d8811' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTIyYWQ1ZjhkNzViZDAwMTNmNGIxZTAiLCJpYXQiOjE2OTY3NzE5NTd9.AIkqbZANEoAinaMwDzsrA63hfoYohfuXMHIvMxCMzfI' \
+--header 'Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTIyYWQ1ZjhkNzViZDAwMTNmNGIxZTAiLCJpYXQiOjE2OTY3NzE5NTd9.AIkqbZANEoAinaMwDzsrA63hfoYohfuXMHIvMxCMzfI'
+```
