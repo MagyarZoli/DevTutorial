@@ -5,6 +5,8 @@ git status
 git log
 git log -p
 git log --graph
+git log --oneline
+git log --oneline --graph
 ```
 ```{bash}
 git show commi
