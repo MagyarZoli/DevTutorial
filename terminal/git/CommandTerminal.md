@@ -37,8 +37,3 @@ git restore --staged .
 ```{bash}
 git restore .
 ```
-```{bash}
-git checkout commit
-git checkout git
-git checkout master
-```
