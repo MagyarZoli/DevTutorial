@@ -15,3 +15,6 @@ git show commi
 ```bash
 git log --grep='example'
 ```
+```bash
+git branch
+```

@@ -45,3 +45,10 @@ git checkout master
 ```{bash}
 git rm example.txt
 ```
+```{bash}
+git switch master
+git merge git
+```
+```{bash}
+git branch -d git
+```
