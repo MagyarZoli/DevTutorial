@@ -28,3 +28,12 @@ git add .
 git mv src/main/java/org/example/git/example.txt \
 src/main/java/org/example/git/anotherexample.txt
 ```
+```{bash}
+git restore --staged src/main/java/org/example/git/example.txt
+```
+```{bash}
+git restore --staged .
+```
+```{bash}
+git restore .
+```
