@@ -23,3 +23,8 @@ git pull origin git
 git diff
 git diff --cached
 ```
+```{bash}
+git add .
+git mv src/main/java/org/example/git/example.txt \
+src/main/java/org/example/git/anotherexample.txt
+```
