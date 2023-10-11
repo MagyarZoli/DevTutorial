@@ -42,3 +42,6 @@ git checkout commit
 git checkout git
 git checkout master
 ```
+```{bash}
+git rm example.txt
+```
