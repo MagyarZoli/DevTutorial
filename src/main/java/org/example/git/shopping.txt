@@ -1,7 +1,7 @@
 apple
-yogurt
-milk
+2l milk
 bread
 cereal
-13 eggs
+12 eggs
 bacon
+cheese
