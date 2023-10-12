@@ -6,3 +6,4 @@ cereal
 12 eggs
 bacon
 cheese
+banana
