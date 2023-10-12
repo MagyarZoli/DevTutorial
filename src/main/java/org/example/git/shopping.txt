@@ -1,6 +1,7 @@
 apple
 2l milk
 bread
+pork
 cereal
 12 eggs
 bacon
