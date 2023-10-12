@@ -1,7 +1,7 @@
-bananas
+apple
 yogurt
 milk
 bread
 cereal
-eggs
+13 eggs
 bacon
