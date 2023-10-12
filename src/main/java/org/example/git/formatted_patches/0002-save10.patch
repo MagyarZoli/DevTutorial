@@ -1,0 +1,31 @@
+From f183004275597cd907ff766f523b77e3e66c556b Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Magyar=20Zolt=C3=A1n?=
+ <118557170+MagyarZoli@users.noreply.github.com>
+Date: Thu, 12 Oct 2023 11:49:49 +0200
+Subject: [PATCH 2/2] save10
+
+---
+ src/main/java/org/example/git/shopping.txt | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/src/main/java/org/example/git/shopping.txt b/src/main/java/org/example/git/shopping.txt
+index ccb47bc..a61ba0d 100644
+--- a/src/main/java/org/example/git/shopping.txt
++++ b/src/main/java/org/example/git/shopping.txt
+@@ -1,7 +1,7 @@
+ apple
+-yogurt
+-milk
++2l milk
+ bread
+ cereal
+-13 eggs
+-bacon
+\ No newline at end of file
++12 eggs
++bacon
++cheese
+\ No newline at end of file
+-- 
+2.39.1.windows.1
+
