@@ -7,3 +7,4 @@ cereal
 bacon
 cheese
 banana
+orange
