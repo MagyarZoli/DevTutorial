@@ -52,3 +52,16 @@ git merge git
 ```{bash}
 git branch -d git
 ```
+```{bash}
+git stash
+git stash list
+```
+```{bash}
+git stash list
+git stash apply 0
+```
+```{bash}
+git clean -n
+git clean -dn
+git clean -df
+```
