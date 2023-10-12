@@ -1,0 +1,7 @@
+bananas
+yogurt
+milk
+bread
+cereal
+eggs
+bacon

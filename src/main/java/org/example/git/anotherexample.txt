@@ -1,5 +1,0 @@
-This is a file with content.
-
-important content.
-
-Edit a hunk.
