@@ -1,0 +1,3 @@
+```bash
+cksum names.txt
+```
