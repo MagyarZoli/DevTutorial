@@ -40,8 +40,13 @@
 pipeline {
     agent any
     parameters {
-        string defaultValue: 'hello',
+        choice choices: ['hello', 'shebang', 'text', 'for', 'if', 'vars',
+                         'pipe', 'while', 'reader', 'func', 'pfunc', 'prompt',
+                         'user', 'fibonacci', 'declare', 'greeting', 'headtailwc',
+                         'params', 'sport', 'typeset', 'delay', 'proc'],
                 name: 'FILE'
+        string defaultValue: '',
+                name: 'COMMAND'
         text defaultValue: '/shell/basic/',
                 name: 'PATH'
     }
@@ -61,18 +66,18 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                sh(".${env.PATH}${env.FILE}.sh ${env.NUMBER}")
+                sh(".${env.PATH}${env.FILE}.sh ${env.COMMAND}")
             }
         }
         stage('Full path') {
             steps {
-                sh("${env.WORKSPACE}${env.PATH}${env.FILE}.sh ${env.NUMBER}")
+                sh("${env.WORKSPACE}${env.PATH}${env.FILE}.sh ${env.COMMAND}")
             }
         }
         stage('Change directory') {
             steps {
                 dir("${env.WORKSPACE}${env.PATH}"){
-                    sh("./${env.FILE}.sh ${env.NUMBER}")
+                    sh("./${env.FILE}.sh ${env.COMMAND}")
                 }
             }
         }
