@@ -1,4 +1,4 @@
-```groovy
+```Jenkinsfile
 pipeline {
     agent any
     options {
