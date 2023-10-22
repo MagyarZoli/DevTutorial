@@ -1,0 +1,81 @@
+[
+  {
+    "Id": "sha256:31b4053373d4c629c03b5760bf864cbc3eaae9c1bab47babfd288b74428f0731",
+    "RepoTags": [],
+    "RepoDigests": [],
+    "Parent": "",
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": "2023-10-20T09:56:54.667002829Z",
+    "Container": "",
+    "ContainerConfig": {
+      "Hostname": "",
+      "Domainname": "",
+      "User": "",
+      "AttachStdin": false,
+      "AttachStdout": false,
+      "AttachStderr": false,
+      "Tty": false,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": null,
+      "Cmd": null,
+      "Image": "",
+      "Volumes": null,
+      "WorkingDir": "",
+      "Entrypoint": null,
+      "OnBuild": null,
+      "Labels": null
+    },
+    "DockerVersion": "",
+    "Author": "",
+    "Config": {
+      "Hostname": "",
+      "Domainname": "",
+      "User": "",
+      "AttachStdin": false,
+      "AttachStdout": false,
+      "AttachStderr": false,
+      "Tty": false,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      ],
+      "Cmd": [
+        "/bin/bash"
+      ],
+      "Image": "",
+      "Volumes": null,
+      "WorkingDir": "",
+      "Entrypoint": null,
+      "OnBuild": null,
+      "Labels": {
+        "org.opencontainers.image.ref.name": "ubuntu",
+        "org.opencontainers.image.version": "22.04"
+      }
+    },
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Size": 77824984,
+    "VirtualSize": 77824984,
+    "GraphDriver": {
+      "Data": {
+        "LowerDir": "/var/lib/docker/overlay2/236cf09282cfee945c4ca8a382b7220b46a8f8e655ea2feeed9b93d157288ec1/diff",
+        "MergedDir": "/var/lib/docker/overlay2/tubdrpf48ihk1aelpdn0rp154/merged",
+        "UpperDir": "/var/lib/docker/overlay2/tubdrpf48ihk1aelpdn0rp154/diff",
+        "WorkDir": "/var/lib/docker/overlay2/tubdrpf48ihk1aelpdn0rp154/work"
+      },
+      "Name": "overlay2"
+    },
+    "RootFS": {
+      "Type": "layers",
+      "Layers": [
+        "sha256:256d88da41857db513b95b50ba9a9b28491b58c954e25477d5dad8abb465430b",
+        "sha256:022eae35b21e9c8d3403c2aaa772d029915af0e68ed1ee8a5eff7e1b3ffc1250"
+      ]
+    },
+    "Metadata": {
+      "LastTagTime": "0001-01-01T00:00:00Z"
+    }
+  }
+]
