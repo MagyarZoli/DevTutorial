@@ -16,6 +16,6 @@ PATH="/bob"
 #HOME user's home directory
 #PATH directories which are searched for commands
 #HOSTNAME hostname of the machine
-#SHELL shell that is being used
+#SHELL Shell that is being used
 #USER user of this session
 #TERM type of command-line terminal that is being used

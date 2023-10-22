@@ -22,7 +22,4 @@ docker run --rm --entrypoint sh \
 -c "echo 'Hello there.' > /tmp/file && cat /tmp/file"
 cat /tmp/this_file_does_not_exits
 ```
-```bash
-
-```
 

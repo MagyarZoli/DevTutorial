@@ -21,6 +21,6 @@ docker run hello-world:linux
 docker ps -a
 ```
 ```bash
-docker build -t our-first-image .
-docker run our-first-image
+docker build -t our-First-image .
+docker run our-First-image
 ```

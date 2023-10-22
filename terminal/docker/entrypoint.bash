@@ -16,14 +16,12 @@ get_current_date() {
       xargs -I {} date --date='{}'
 }
 
-if ! bash_is_current_version
-then
+if ! bash_is_current_version; then
   >&2 echo "ERROR: Bash not installed or not the right version."
   exit 1
 fi
 
-if ! curl_is_installed
-then
+if ! curl_is_installed; then
   >&2 echo "ERROR: Curl is not installed."
   exit 1
 fi

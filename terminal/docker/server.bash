@@ -11,8 +11,7 @@ start_server() {
   done
 }
 
-if ! bash_is_current_version
-then
+if ! bash_is_current_version; then
   >&2 echo "ERROR: Bash not installed or not the right version."
   exit 1
 fi

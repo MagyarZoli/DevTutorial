@@ -1,13 +1,14 @@
 ```bash
 cd ..
-docker build --file server.Dockerfile --tag our-first-server .
-docker run our-first-server
+cd ..
+docker build --file server.entrypoint.Dockerfile --tag our-First-server .
+docker run our-First-server
 ```
 ```bash
 docker kill b439f9b8d0c9
 ```
 ```bash
-docker run -d our-first-server
+docker run -d our-First-server
 ```
 ```bash
 docker ps
