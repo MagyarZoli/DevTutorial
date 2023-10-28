@@ -1,0 +1,12 @@
+let area, width, height;
+
+width = window.prompt("Enter width");
+height = width.prompt("Enter height");
+
+area = getArea(width, height);
+
+console.log("The area is:", area);
+
+function getArea(width, height) {
+    return width * height;
+}
