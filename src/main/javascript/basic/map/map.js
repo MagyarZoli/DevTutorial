@@ -9,7 +9,7 @@ let shoppingCart = 0;
 
 shoppingCart += store.get("t-shirt");
 shoppingCart += store.get("underwear");
-console.log=(shoppingCart);
+console.log(shoppingCart);
 
 store.set("hat", 40);
 

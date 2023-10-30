@@ -1,6 +1,7 @@
 import {Car} from "../auxiliary/car.js";
 
 export class Builder extends Car {
+
     constructor() {
         super();
         this.car = new Car();
