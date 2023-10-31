@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ajax 4 - PHP Forms</title>
+</head>
+<body>
+  <button id="button">Get Name</button><br>
+
+  <h1>GET FORM</h1>
+  <from method="GET" action="process.php">
+    <input type="text" name="name">
+    <input type="submit" name="Submit">
+  </from>
+
+  <h1>AJAX GET FORM</h1>
+  <from id="getForm">
+    <input type="text" name="name" id="name1">
+    <input type="submit" name="Submit">
+  </from>
+
+  <h1>POST FORM</h1>
+  <from method="GET" action="process.php">
+    <input type="text" name="name">
+    <input type="submit" name="Submit">
+  </from>
+
+  <h1>AJAX POST FORM</h1>
+  <from id="postForm">
+    <input type="text" name="name" id="name2">
+    <input type="submit" name="Submit">
+  </from>
+
+  <button id="button2">Get Users</button><br>
+  <h1>Users</h1>
+  <div id="users"></div>
+
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
