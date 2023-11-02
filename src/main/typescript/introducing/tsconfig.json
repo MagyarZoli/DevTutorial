@@ -1,0 +1,34 @@
+//{
+//  "include": ["src/**/*"]
+//}
+
+//{
+//  "compilerOptions": {
+//    "outDir": "build",
+////    "target": "ES6"
+//    "target": "esnext",
+//    "noEmit": true
+//  },
+//  "include": ["src/**/*"]
+//}
+
+//{
+//  "compilerOptions": {
+//    "allowJs": true,
+//    "checkJs": true,
+//    "outDir": "build",
+//    "target": "esnext",
+//    "noEmit": true
+//  },
+//  "include": [
+//    "introducing/src/**/*"
+//  ]
+//}
+
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "dist"
+  },
+  "include": ["src/**.ts"]
+}
