@@ -1,0 +1,8 @@
+#GET http://restful.dev/wp-json/wp/v2/posts
+#Authorization: Basic morten ***
+
+#GET http://restful.dev/wp-json/wp/v2/posts?per_page=2
+#Authorization: Basic morten ***
+
+GET http://restful.dev/wp-json/wp/v2/posts/4
+Authorization: Basic morten ***

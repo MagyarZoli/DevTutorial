@@ -1,0 +1,10 @@
+#OPTIONS http://restful.dev/wp-json/wp/v2/posts/15?forec=true
+#Authorization: Basic morten ***
+
+DELETE http://restful.dev/wp-json/wp/v2/posts/15
+Authorization: Basic morten ***
+Content-Type: application/json
+
+{
+  "title": "The New REST API Post Title!"
+}

@@ -1,0 +1,10 @@
+#POST http://restful.dev/wp-json/wp/v2/posts
+#Authorization: Basic morten ***
+#Content-Type: application/json
+#
+#{
+#  "title": "A post created via the REST API",
+#  "content": "This is the content of the post created with the REST API.",
+#  "status": "publis",
+#  "author": 1
+#}

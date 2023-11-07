@@ -1,0 +1,5 @@
+HEAD http://restful.dev/wp-json/wp/v2/posts/4
+Authorization: Basic morten ***
+
+#OPTIONS http://restful.dev/wp-json/wp/v2/posts
+#Authorization: Basic morten ***
