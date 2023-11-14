@@ -4,6 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 src/main/typescript/node_modules/
+src/main/javascript/expressjs/node_modules/
 
 ### STS ###
 .apt_generated
