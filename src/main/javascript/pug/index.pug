@@ -1,0 +1,125 @@
+mixin comment(commentData)
+    .comment
+        if commentData.postedByAdmin
+            em (Posted by Admin)
+        .date= commentData.date
+        .author= commentData.author
+        .text= commentData.text
+
+doctype html
+html
+    head
+        link(rel="stylesheet", href="style.css")
+        style.
+            p {
+                color: red;
+                text-decoration: underline;
+            }
+        style.
+            .comment {
+                font-family: sans-serif;
+                line-height: 1.5;
+                padding: 10px;
+                border: 1px solid #555;
+                width: 250px;
+            }
+            .date {
+                font-size: 85%;
+                text-align: right;
+            }
+            .author {
+                font-size: 110%;
+                font-weight: bold;
+            }
+            .text {
+                font-size: 100%;
+            }
+        title Conditionals in Pug
+    body
+        h1 Welcome to dcode!
+        p.
+            This is a paragraph tag
+            and this is a new line
+        ul
+            li This is item #1
+            li This is item #2
+            li This is item #3
+
+        h1#pageTitle Page Title Goes Here!
+        //p.big-para.
+        //    Here is some text for
+        //    my big paragraph!
+        p.big-para.
+            Here is some more text for
+            my big paragraph!
+        .display-box
+        #myOnlyDiv
+
+        input(type="password" name="inpPwd" data-js=`${5 > 2 ? "Ok" : "Not Ok"}`)
+        - const myClasses = ["class1", "class2", "class3"];
+        div.my-div(class=myClasses)
+        - const myStyles = {"color": "red", "background-color": "blue"};
+        div(style=myStyles)
+        - const myAttributes = {"src": "myPhoto.png", "alt": "This is my photo"};
+        img&attributes(myAttributes)
+        input(type="text" disabled)
+
+        p(style="text-align: center; text-transform: uppercase;") This is an HTML file!
+        - const pStyles = {"text-align": "center", "text-transform": "uppercase"};
+        p(style=pStyles) This is an HTML file!
+
+        h1 For/Each Loop
+        each n in [1, 2, 3, 4, 5]
+            p n
+            p= n
+        each n, i in [1, 2, 3, 4, 5]
+            p= n + " - " + i
+        - const names = ["Dom", "Sophie", "Mark"];
+        each n, i in names
+            p= n + " - " + i
+        - const grades = {"Web Dev": 85, "Software Design": 75};
+        for n, i in grades
+            p= n + " - " + i
+        for n, i in []
+            p= n + " - " + i
+        else
+            strong No values are here!
+
+        h2 My Web Application
+        - let user = {name: "Domenic", loggedIn: false, lastLogin: 6};
+        if user.loggedIn
+            p
+                | Welcom back,
+                strong #{user.name}
+        else if user.lastLogin < 10
+            p Your last login was #{user.lastLogin} minutes ago
+            p
+                a(href="/login") Log In Again
+        else
+            a(href="/login") Log In
+
+        - const orderStatus = "Pending"
+        case orderStatus
+            when "Pending"
+                p Your order has been placed and will be sent shortly.
+            when "In_Transit"
+                p Your order is on the move - you should receive it soon!
+            when "Completed"
+                p Your order has benn completed.
+            default
+                p Sorry! We aren't suer what happened with your order...
+
+        h1 Company Name
+        nav
+            a(href="index.html") Home
+            a(href="about.html") About Us
+            a(href="#") Contact Us
+
+        //.comment
+        //    .date 04-02-2018
+        //    .author dcode
+        //    .text Hey mate! Nice tutorials.
+        - const c = {postedByAdmin: true, date: "04-02-2018", author: "dcode", text: "Hey mate great tutorial."};
+        +comment(c)
+        - const c2 = {date: "04-02-2020", author: "Bruce", text: "That was funny!"};
+        +comment(c2)
