@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <title>Angular Playlist</title>
+  <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+  <script src="app/lib/angular.min.js"></script>
+</head>
+<body ng-init="meats=['pork', 'ham', 'beef']">
+  <input type="text" ng-model="favMeat" placeholder="enter you fav meat" />
+  <p>You like {{ meats[0] }}, and you also like {{ meats[2] }}</p>
+</body>
+</html>
