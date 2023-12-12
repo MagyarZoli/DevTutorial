@@ -17,7 +17,7 @@
         <junit.version>4.13.2</junit.version>
         <junitJupiter.version>5.9.2</junitJupiter.version>
         <assured.version>4.3.3</assured.version>
-        <jakson.version>2.13.3</jakson.version>
+        <jakson.version>2.13.4.2</jakson.version>
         <surefire.version>2.22.1</surefire.version>
         <failsafe.version>2.22.1</failsafe.version>
         <shade.version>3.2.4</shade.version>
